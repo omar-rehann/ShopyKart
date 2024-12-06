@@ -1,0 +1,230 @@
+body {
+    background-color: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section.frist {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+section.frist .logo a,
+section.frist .shop a {
+    text-decoration: none;
+    color: black;
+}
+
+section.frist .logo a i,
+section.frist .shop i {
+    font-size: 20px;
+}
+
+
+/* end frist */
+
+
+/* start navbar */
+
+section.navbar {
+    background-color: white;
+}
+
+section.navbar .container-fluid .collapse ul.frist .dropdown-menu {
+    width: 500px;
+    line-height: 3;
+}
+
+@media (max-width:767px) {
+    section.navbar .container-fluid .collapse ul.frist .dropdown-menu {
+        width: 100%;
+        line-height: 3;
+    }
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu .row a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu {
+    text-align: center;
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu .image img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* end navbar */
+
+
+/* start slide */
+
+section.slide {
+    background-image: url(photo/banner3.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+section.slide .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+section.slide .text {
+    color: white;
+}
+
+section.slide .text button {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+section.slide .image img {
+    width: 100%;
+}
+
+
+/* end slide */
+
+
+/* start info */
+
+section.info {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* start concat */
+
+section.concat {
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+section.concat .icon i {
+    margin: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* end concat */
+
+
+/* end into */
+
+
+/* start one */
+
+section.one {
+    /* background-color: red; */
+    padding: 10px;
+}
+
+section.one .box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 3;
+    margin: 10px 0px;
+}
+
+section.one .row .col .flex img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+section.one .boxx {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+section.one .boxx button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* end one */
+
+
+/* start new  */
+
+section.new {
+    background-color: #233a95;
+    padding: 10px;
+}
+
+section.new h3,
+section.new p {
+    color: white;
+    font-weight: bold;
+}
+
+section.new input {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+section.new span {
+    position: relative;
+    background-color: red;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    right: 44px;
+    cursor: pointer;
+}
+
+
+/* end new */
+
+
+/* start footer */
+
+section.footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+section.footer .box img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+
+/* end footer */

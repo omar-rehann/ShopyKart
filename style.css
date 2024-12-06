@@ -1,0 +1,466 @@
+body {
+    background-color: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section.frist {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+section.frist .logo a,
+section.frist .shop a {
+    text-decoration: none;
+    color: black;
+}
+
+section.frist .logo a i,
+section.frist .shop i {
+    font-size: 20px;
+}
+
+
+/* end frist */
+
+
+/* start navbar */
+
+section.navbar {
+    background-color: white;
+}
+
+section.navbar .container-fluid .collapse ul.frist .dropdown-menu {
+    width: 500px;
+    line-height: 3;
+}
+
+@media (max-width:767px) {
+    section.navbar .container-fluid .collapse ul.frist .dropdown-menu {
+        width: 100%;
+        line-height: 3;
+    }
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu .row a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu {
+    text-align: center;
+}
+
+section.navbar .container-fluid .collapse ul .dropdown-menu .image img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* end navbar */
+
+
+/* start slide */
+
+section.slide {
+    position: relative;
+}
+
+section.slide .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+section.slide .text {
+    color: white;
+}
+
+section.slide .text button {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+section.slide .image img {
+    width: 100%;
+}
+
+
+/* end slide */
+
+
+/* start product */
+
+section.product {
+    margin: 10px 10px;
+}
+
+section.product .row .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section.product .continer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+section.product .continer button {
+    padding: 10px;
+    margin: 10px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+section.product .row .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    section.product .row .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+section.product .row .box {
+    background-color: white;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+section.product .row .box .image {
+    margin: 10px auto;
+    text-align: center;
+}
+
+section.product .row .box .image img {
+    width: 200px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+section.product .row .box .price span del {
+    color: grey;
+    margin: 0px 10px;
+}
+
+section.product .row .box .click button {
+    background-color: black;
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+
+/* end product */
+
+
+/* start photo */
+
+section.photo {
+    padding: 10px;
+}
+
+section.photo .row .image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+
+section.photo .row .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 50%);
+    transition: 2s;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.photo .row .title:hover {
+    top: 5%;
+}
+
+
+/* end phot
+/* start special */
+
+section.speacial {
+    padding: 10px;
+}
+
+section.speacial .continer {
+    text-align: center;
+}
+
+section.speacial h4 {
+    position: relative;
+}
+
+section.speacial h4::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    background-color: red;
+    left: 40%;
+    transform: translateX(-50%);
+    right: 0px;
+    top: 16px;
+}
+
+@media (max-width:767px) {
+    section.speacial h4::before {
+        content: "";
+        position: absolute;
+        width: 112px;
+        height: 2px;
+        background-color: red;
+        left: 29%;
+        transform: translateX(-50%);
+        right: 0px;
+        top: 16px;
+    }
+}
+
+section.speacial h4::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    background-color: black;
+    left: 45%;
+    transform: translateX(-50%);
+    right: 0px;
+    top: 16px;
+    transform: rotate(130deg);
+}
+
+
+/* end special */
+
+
+/* start ground */
+
+section.ground {
+    padding: 10px;
+}
+
+section.ground .imagee {
+    position: relative;
+}
+
+section.ground .imagee img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section.ground .imagee img.special {
+    width: 100%;
+    border-radius: 10px;
+    height: 600px;
+}
+
+section.ground .imagee .title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    background-color: rgb(0, 0, 0, 50%);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* end ground */
+
+
+/* start top product */
+
+section.top_product {
+    padding: 10px;
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+section.top_product .continer {
+    text-align: center;
+}
+
+section.top_product h4 {
+    position: relative;
+}
+
+section.top_product h4::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    background-color: red;
+    left: 40%;
+    transform: translateX(-50%);
+    right: 0px;
+    top: 16px;
+}
+
+@media (max-width:767px) {
+    section.speacitop_productal h4::before {
+        content: "";
+        position: absolute;
+        width: 112px;
+        height: 2px;
+        background-color: red;
+        left: 29%;
+        transform: translateX(-50%);
+        right: 0px;
+        top: 16px;
+    }
+}
+
+section.top_product h4::after {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    background-color: black;
+    left: 45%;
+    transform: translateX(-50%);
+    right: 0px;
+    top: 16px;
+    transform: rotate(130deg);
+}
+
+section.top_product .content .row .box {
+    background-color: #ddd;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    margin: 10px 10px;
+}
+
+section.top_product .content .row .box .click button {
+    background-color: black;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+section.top_product .content .row .box .price {
+    font-weight: bold;
+}
+
+section.top_product .content .row .box .price span del {
+    color: grey;
+    margin-right: 5px;
+}
+
+section.top_product .content .row .box .image img.other {
+    width: 290px;
+}
+
+
+/* end top product */
+
+
+/* start new  */
+
+section.new {
+    background-color: #233a95;
+    padding: 10px;
+}
+
+section.new h3,
+section.new p {
+    color: white;
+    font-weight: bold;
+}
+
+section.new input {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+section.new span {
+    position: relative;
+    background-color: red;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    right: 44px;
+    cursor: pointer;
+}
+
+@media (max-width:992px) {
+    section.new span {
+        position: relative;
+        background-color: red;
+        padding: 12px;
+        border-radius: 10px;
+        color: white;
+        right: 24px;
+        cursor: pointer;
+    }
+}
+
+
+/* end new */
+
+
+/* start footer */
+
+section.footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+section.footer .box img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+
+/* end footer */
